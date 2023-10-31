@@ -6,6 +6,8 @@
 Este proyecto de fin de grado se centra en el control de un brazo robótico simulado mediante un sistema de control manual inalámbrico. Se ha implementado un dispositivo que permite al usuario interactuar con el sistema y controlar el robot. Este dispositivo es un controlador diseñado para conectarse a un mando de la videoconsola Wii.
 El proyecto busca una conjunción entre hardware y software que permita alcanzar el objetivo de controlar el brazo robótico de manera satisfactoria. Cada componente utilizado es esencial en el proceso, siendo la comunicación entre ellos un aspecto crucial.
 
+Video del funcionamiento: https://youtu.be/hsgEAXDb1Do
+
 ## Objetivos
 
 - **Control del Sistema Robótico**: Proporcionar al usuario un medio para interactuar con el sistema y controlar el robot mediante un controlador inalámbrico.
