@@ -1,6 +1,6 @@
 # Wireless Control of a Simulated Robotic System 🤖📡
 
-This project is the result of my final thesis for the **Industrial Automation and Robotics** CFGS (Vocational Training Degree), completed at **IES Politécnico Hermenegildo Lanz (Granada, Spain)**.
+This project is the result of my final thesis for the **Industrial Automation and Robotics** CFGS, completed at **IES Politécnico Hermenegildo Lanz (Granada, Spain)**.
 
 ## 🧠 Overview
 
