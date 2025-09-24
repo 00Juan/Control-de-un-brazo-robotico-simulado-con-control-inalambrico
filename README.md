@@ -1,24 +1,83 @@
+# Wireless Control of a Simulated Robotic System 🤖📡
 
-# Manejo de un Sistema Robótico Simulado mediante un Sistema de Control Inalámbrico
+This project is the result of my final thesis for the **Industrial Automation and Robotics** CFGS (Vocational Training Degree), completed at **IES Politécnico Hermenegildo Lanz (Granada, Spain)**.
 
-## Descripción
+## 🧠 Overview
 
-Este proyecto de fin de grado se centra en el control de un brazo robótico simulado mediante un sistema de control manual inalámbrico. Se ha implementado un dispositivo que permite al usuario interactuar con el sistema y controlar el robot. Este dispositivo es un controlador diseñado para conectarse a un mando de la videoconsola Wii.
-El proyecto busca una conjunción entre hardware y software que permita alcanzar el objetivo de controlar el brazo robótico de manera satisfactoria. Cada componente utilizado es esencial en el proceso, siendo la comunicación entre ellos un aspecto crucial.
+The system allows full control of a simulated ABB robotic arm using a wireless physical interface based on a **Wii Nunchuk** controller. The communication and control chain combines **Arduino, ESP32, TIA Portal, WinCC**, and **ABB RobotStudio**, using both standard and custom protocols.
 
-Video del funcionamiento: https://youtu.be/hsgEAXDb1Do
+---
 
-## Objetivos
+## 🔧 Technologies Used
 
-- **Control del Sistema Robótico**: Proporcionar al usuario un medio para interactuar con el sistema y controlar el robot mediante un controlador inalámbrico.
-  
-- **Comunicación Efectiva**: Garantizar una comunicación fluida entre los diferentes componentes del sistema, tanto físicos como informáticos.
-  
-- **Integración Hardware-Software**: Buscar una solución que combine adecuadamente el hardware y software para lograr un control preciso del brazo robótico simulado.
-  
-- **Interfaz Intuitiva**: Ofrecer elementos de control (pulsadores, joysticks, potenciómetros, botones de control y campos de entrada virtuales) que permitan al usuario controlar y parametrizar los movimientos del brazo robótico de manera sencilla.
+- **Hardware**
+  - ESP32 microcontrollers (2x)
+  - Arduino UNO
+  - Wii Nunchuk (joystick, accelerometer, buttons)
+  - LCD display 16x2 (I2C)
+  - ENC28J60 Ethernet module
+  - LiPo battery + voltage booster
+  - LEDs, resistors, protoboards
 
-## Contribuciones
+- **Software**
+  - [RobotStudio (ABB)](https://new.abb.com/products/robotics/es/robotstudio)
+  - [TIA Portal V16 (Siemens)](https://new.siemens.com/global/en/products/automation/industry-software/automation-software/tia-portal.html)
+  - PLCSIM Advanced
+  - WinCC RT Advanced
+  - Arduino IDE + PlatformIO
+  - Custom OPC Server: **ABB IRC5 OPC**
 
-Este proyecto es el resultado del trabajo de mi trabajo de fin de ciclo. Se agradece cualquier feedback, contribución o sugerencia para mejorar y expandir el proyecto.
+---
 
+## 🔄 Communication Protocols
+
+- **I2C**: Sensor communication with Wii Nunchuk  
+- **ESP-NOW**: Wireless data transfer between ESP32 devices  
+- **J2WC**: Custom 2-wire communication protocol  
+- **Modbus TCP/IP**: Arduino to Siemens PLC (via ENC28J60)  
+- **OPC**: PLC <-> ABB RobotStudio data exchange  
+- **SCADA / HMI**: Built in WinCC
+
+---
+
+## 🎯 Main Features
+
+- Real-time wireless control of a robotic arm simulation
+- Configurable HMI interface with status indicators
+- Latency and cycle time monitoring
+- Full code modularity and object-oriented logic blocks (TIA Portal)
+- Open-source, low-cost components
+
+---
+
+## 🎥 Demo
+
+👉 [Watch the demo video here](https://youtu.be/hsgEAXDb1Do)  
+
+---
+
+## 📄 Full Report
+
+📥 [Download the final project report (PDF)](https://github.com/00Juan/robotstudio-wireless-control/blob/main/TFC_ARI_Juan_Estevez_Delgado.pdf)  
+
+---
+
+## 👨‍🏫 Acknowledgements
+
+- **IES Politécnico Hermenegildo Lanz** (Granada, Spain)  
+- My tutors and professors from the Electricity Department  
+---
+
+## 📃 License
+
+MIT License. Feel free to use, modify, and adapt this project for learning or development purposes. Credit appreciated!
+
+---
+
+## 📫 Contact
+
+Juan Estévez Delgado  
+📧 juanesteveus@gmail.com 
+🌐 https://www.linkedin.com/in/juanestevezdelgado/
+
+---
