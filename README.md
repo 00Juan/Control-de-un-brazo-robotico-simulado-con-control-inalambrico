@@ -58,7 +58,7 @@ The system allows full control of a simulated ABB robotic arm using a wireless p
 
 ## 📄 Full Report
 
-📥 [Download the final project report (PDF)](https://github.com/00Juan/robotstudio-wireless-control/blob/main/TFC_ARI_Juan_Estevez_Delgado.pdf)  
+📥 [Download the final project report (PDF)](https://github.com/00Juan/robotstudio-wireless-control/blob/main/Estevez_TFC_2022.pdf)  
 
 ---
 
